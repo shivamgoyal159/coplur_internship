@@ -74,16 +74,43 @@ Drop rows from the DataFrame based on a certain condition applied on a column
 Insert a row at a given position in Pandas DataFrame
 Create a list from rows in Pandas DataFrame"""
 
-print("-------WAYS TO ITERATE-------")
+print("Different ways to iterate over rows in Pandas DataFrame")
 
-print("-------CONDITION BASED ROWS-------")
+data={'Name':['Lakshay','Shivam','Sanidhya','Suchitra','Yash'],
+      'Marks':[80,85,89,98,88]}
 
-print("-------USING ILOC[]-------")
+df=pd.DataFrame(data)
 
-print("--------GIVEN COLUMN SELECTION--------")
+print("\n",df)
+print("\n",df.loc[0])
+print("\n",df.loc[[0,1]])
 
-print("-------DROP ROWS CERTAIN CONDITION ON A COLUMN-------")
+data={'Name':['Lakshay','Shivam','Sanidhya','Suchitra','Yash'],
+      'Marks':[80,85,89,98,88]}
 
-print("-------INSERT ROW ON POSITION--------")
+df=pd.DataFrame(data,index=['a','b','c','d','e'])
 
-print("-------LIST FROM ROWS-------")
+print("\n",df)
+print("\n",df.loc['a'])
+
+print("\nSelecting rows in pandas DataFrame based on conditions")
+
+print(df[df['Marks']>85])
+
+print("\nSelect any row from a Dataframe using iloc[]")
+
+print(df.iloc[[1,2]])
+
+print("\nLimited rows selection with given column")
+
+print(df.loc['a':'d',["Name"]])
+
+print("\nDrop rows from the dataframe based on certain condition applied on a column")
+
+result=df[df['Marks']!=85]
+print(result)
+
+print("\nCreate a list from rows in Pandas dataframe")
+
+print(df.values.tolist())
+
