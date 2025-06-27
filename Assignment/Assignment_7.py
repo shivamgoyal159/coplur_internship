@@ -38,7 +38,7 @@ df['Day'] = df['Date'].dt.day
 df['Weekday'] = df['Date'].dt.day_name()
 
 df['Days_Since'] = (pd.Timestamp.today() - df['Date']).dt.days
-print(df)
+print(df) 
 
 print("\n 3) Import a meaningful CSV file, clean data, and analyze \n")
 
