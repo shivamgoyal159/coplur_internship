@@ -1,0 +1,5 @@
+ProcessName,RawTableName,RawTableCol,RawTableColDatatype,Logic,Cura,
+UserInfo,User,ID,STRING,ID is NOT NULL,cur,1
+UserInfo,User,Nme,STRING,,cur,2
+SalesInfo,Sales,ID,ID,,cur,3
+SalesInfo,Sales,Date,DATE,,cur,4

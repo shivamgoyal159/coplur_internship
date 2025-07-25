@@ -1,0 +1,3 @@
+RawTableName,RawTableColumn,RawTableColDataType,Logic ,CuratedTableName,Curated Col,Presentation Table
+User,ID,String,ID is NOT NULL,Empolyee,EmpID,Emp
+User,Name,String,,Empolyee,EmpName,Emp

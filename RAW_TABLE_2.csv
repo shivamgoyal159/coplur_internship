@@ -1,0 +1,5 @@
+Process Name,RawTableName,RawTableColumn,RawTableColDataType,Logic,CuratedTableName,CuratedTableColumn,CuratedTableColumnDatatype
+UserInfo,User,ID,String,ID is NOT NULL,cur.User,EmailID,String
+UserInfo,User,Name,String,,cur.User,Salary,String
+SalesInfo,Sales,ID,String,,cur.Sales,EmailID,String
+SalesInfo,Sales,Date,Date,,cur.Sales,Date,Date
